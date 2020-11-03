@@ -1,5 +1,6 @@
-
+import React from 'react';
 import './App.css';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
@@ -9,8 +10,11 @@ function App() {
       <h1>hello</h1>
 
       {/**sidbar */}
+      <Sidebar />
       {/** feed*/}
+
       {/** widget*/}
+
     </div>
   );
 }
