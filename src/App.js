@@ -1,20 +1,24 @@
 import React from 'react';
 import './App.css';
 import Sidebar from './Sidebar';
+import Feed from './Feed';
+import Widgets from './Widgets'
 
 function App() {
   return (
     //BWM CONVENTION
-    <div className="App">
-
-      <h1>hello</h1>
+    <div className="app">
 
       {/**sidbar */}
+
       <Sidebar />
+
       {/** feed*/}
 
-      {/** widget*/}
+      <Feed />
 
+      {/** widget*/}
+      <Widgets />
     </div>
   );
 }
