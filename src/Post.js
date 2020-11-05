@@ -12,24 +12,24 @@ function Post({ displayName, username, verified, text, image, avatar }) {
     return (
         <div className='post'>
             <div className="post__avatar">
-                <Avatar src='https://lh3.googleusercontent.com/ogw/ADGmqu9aQEuH_CW4CVeiglI9AhtWlNJhp72ZQeawqW7DLg=s32-c-mo' />
+                <Avatar src={avatar} />
             </div>
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>
-                            Leila Baneshi <small>{'@leila.bni'}</small>
+                            {displayName}{''}
                             <span className='post__headerSpecial'>
-                                <VerifiedUserIcon className='post__badge' />
+                                {verified && <VerifiedUserIcon className='post__badge' />} @{username}
                             </span>
                         </h3>
                     </div>
                     <div className="Post__headerDescription">
-                        <p> i made a twitter clone </p>
+                        <p>{text}</p>
                     </div>
                 </div>
 
-                <img src="https://media.giphy.com/media/qxsgm2X2Fb5WE/giphy.gif" alt='gif' />
+                <img src={image} alt='gif' />
 
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize='small' />
